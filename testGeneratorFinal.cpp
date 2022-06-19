@@ -4,57 +4,6 @@
 #include <math.h>
 using namespace std;
 
-// If t is the number of test cases given then ignore
-
-/*
-#Ask for the number of initial inputs : 0,1,2,>2
-## FOR 0 INITIAL INPUTS
-
-"""
-Ask wheter string or array is given :
-IF string given :
-      1. certain values only
-      2. certain set of values only
-      3. binary
-      3. anything
-
-IF array given : *
-      1. permutation? *
-      2. Increasing
-      3. Non-decreasing
-      4. Decreasing
-      5. Non-Increasing
-      6. distinct *
-      7. certain values only
-      8. certain set of values only
-"""
-
-# FOR >2 INITIAL INPUTS
-"""
-Ask for number of initial inputs + boundaries of each input -> create array and store
-Ask for relative constraint if exist : apply array manipulation accordingly
-IF first_int depicts length of array:
-      1. Create array + apply manipulations
-"""
-
-# FOR 1 INITIAL INPUT
-"""
-Ask if array, or string or space speerated integers or nothing given
-IF array given :
-      1. Ask how many arrays given (absolute number/linear function of n : a*n +b) [by default a=1, b=0]
-      2. Ask for array manipulation
-IF string given :
-      1. Ask how many strings given(absolute number/linear function of n : a*n + b) [bydefault a=1, b=0]
-      2. Ask for string manipulation
-IF space seperated integers given :
-      IF all have same num of integers :
-           1.Ask for number of integers in each line
-           2.use array thingy.
-           3. Number of such lines = number of such arrays
-      IF have different (dependent on first integer) :
-          #Ignoring for now
-"""
- */
 mt19937_64 rang(chrono::high_resolution_clock::now().time_since_epoch().count());
 int rng(int lim) {
     uniform_int_distribution<int> uid(0,lim-1);
@@ -132,33 +81,7 @@ int main()
                   long long int x = abs(rng(UP_LIM - 2)) + 1;
                   cout << abs(x) << "\n";
             }
-            else if (flag == 8)
-            {
-            }
-            else if (flag == 9)
-            {
-            }
-            else if (flag == 10)
-            {
-            }
-            else if (flag == 11)
-            {
-            }
-            else if (flag == 12)
-            {
-            }
-            else if (flag == 13)
-            {
-            }
-            else if (flag == 14)
-            {
-            }
-            else if (flag == 15)
-            {
-            }
-            else if (flag == 16)
-            {
-            }
+            // Further functionality will be added later
       }
 
       return 0;
